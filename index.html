@@ -10,6 +10,8 @@
     
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     
+    <link rel="shortcut icon" type="image/png" href="assets/images/codeFavicon.png"/>
+    
     <script
   src="http://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -22,31 +24,113 @@
 <div class="jumbotron">
   <div class="container">
       <div class="row">
-        <h1 class="text-center">Pixar Quiz</h1>
+        <h1 class="text-center">Quiz</h1>
           <div class="mainArea col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
           </div>
       </div>
   </div>
 </div>
 
+
+<span class="glyphicon glyphicon-time label label-danger" id="timerBox"> Timer: 0 :
+    <span class="label label-danger" id="timer"></span>
+</span>   
+    
 <button type="button" id="startGame" class="btn btn-primary btn-lg btn-block">Start Game!</button>   
     
 <div id="after_submit">
     
     <form id ="quiz" name = "quiz">
     
-        <p>The Pizza Planet Truck is in every Pixar Movie except what?</p>  
+        <p>1. The Pizza Planet Truck is in every Pixar Movie except what?</p>  
     
-        <input type = "radio" id = "mc" name = "question1" value = "Brave"> Brave<br>
+        <input type = "radio" id = "mc" name = "question1" value = "Brave" checked> Brave<br>
         <input type = "radio" id = "mc" name = "question1" value = "Good Dinosaur"> The Good Dinosaur<br>
-        <input type = "radio" id = "mc" name = "question1" value = "Incredibles" checked> Incredibles<br>
+        <input type = "radio" id = "mc" name = "question1" value = "Incredibles"> Incredibles<br>
         <input type = "radio" id = "mc" name = "question1" value = "Finding Nemo"> Finding Nemo<br>
+        
+        <p>2. Which one is not is not a Pixar short?</p>  
+        
+        <input type = "radio" id = "mc" name = "question2" value = "Geri's Game" checked> Geri's Game<br>
+        <input type = "radio" id = "mc" name = "question2" value = "Inner Workings"> Inner Workings<br>
+        <input type = "radio" id = "mc" name = "question2" value = "Tin Toy"> Tin Toy<br>
+        <input type = "radio" id = "mc" name = "question2" value = "Presto"> Presto<br>
+        
+        <p>3. Which is the next Pixar Movie coming out?</p>
+        
+        <input type = "radio" id = "mc" name = "question3" value = "Toy Story 4" checked> Toy Story 4<br>
+        <input type = "radio" id = "mc" name = "question3" value = "Incredibles 2"> Incredibles 2<br>
+        <input type = "radio" id = "mc" name = "question3" value = "Inside Out"> Inside Out<br>
+        <input type = "radio" id = "mc" name = "question3" value = "Coco"> Coco<br>
+        
+        <p>4. Who wrote the song "You've got a Friend in Me"?</p>
+        
+        <input type = "radio" id = "mc" name = "question4" value = "Randy Newman" checked> Randy Newman<br>
+        <input type = "radio" id = "mc" name = "question4" value = "John Williamms"> John Williams<br>
+        <input type = "radio" id = "mc" name = "question4" value = "Michael Giacchino"> Michael Giacchino<br>
+        <input type = "radio" id = "mc" name = "question4" value = "Prince"> Prince<br>
+        
+        <p>5. Which is a cancelled Pixar Movie?</p>
+        
+        <input type = "radio" id = "mc" name = "question5" value = "Fraidy Cat"checked> Fraidy Cat<br>
+        <input type = "radio" id = "mc" name = "question5" value = "Princess Academy"> Princess Academy<br>
+        <input type = "radio" id = "mc" name = "question5" value = "Newt"> Newt<br>
+        <input type = "radio" id = "mc" name = "question5" value = "Princess And The Frog"> Princess And The Frog<br>
+        
+        <p>6. Who is the protagonist of Brave?</p>
+        
+        <input type = "radio" id = "mc" name = "question6" value = "Fergus" checked> Fergus<br>
+        <input type = "radio" id = "mc" name = "question6" value = "Elinor"> Elinor<br>
+        <input type = "radio" id = "mc" name = "question6" value = "Fergus"> Fergus<br>
+        <input type = "radio" id = "mc" name = "question6" value = "Merida"> Merida<br>
+        
+        <p>7. What is the persons name in The Good Dinosaur?</p>
+        
+        <input type = "radio" id = "mc" name = "question7" value = "Spot" checked> Spot<br>
+        <input type = "radio" id = "mc" name = "question7" value = "Buddy"> Buddy<br>
+        <input type = "radio" id = "mc" name = "question7" value = "Earl"> Earl<br>
+        <input type = "radio" id = "mc" name = "question7" value = "Arlo"> Arlo<br>
+        
+        <p>8. What is Pixar's lowest rated movie?</p>
+        
+        <input type = "radio" id = "mc" name = "question8" value = "Cars 2" checked> Cars 2<br>
+        <input type = "radio" id = "mc" name = "question8" value = "The Good Dinosaur"> The Good Dinosaur<br>
+        <input type = "radio" id = "mc" name = "question8" value = "Ratatouille"> Ratatouille<br>
+        <input type = "radio" id = "mc" name = "question8" value = "Monsters University"> Monster's University<br>
+        
+        <p>9. Which one is NOT a emotion of Pixar's Inside Out?</p>
+        
+        <input type = "radio" id = "mc" name = "question9" value = "Angst" checked> Angst<br>
+        <input type = "radio" id = "mc" name = "question9" value = "Disgust"> Disgust<br>
+        <input type = "radio" id = "mc" name = "question9" value = "Anger"> Anger<br>
+        <input type = "radio" id = "mc" name = "question9" value = "Joy"> Joy<br>
+        
+        <p>10. Where do Marlin and Dory travel to?</p>
+        
+         <input type = "radio" id = "mc" name = "question10" value = "Buy N' Large" checked> Buy N' Large<br>
+        <input type = "radio" id = "mc" name = "question10" value = "Philip Sherman's Office Fish Tank"> Philip Sherman's Office Fish Tank<br>
+        <input type = "radio" id = "mc" name = "question10" value = "P Sherman 42 Wallaby Way Sydney"> P Sherman 42 Wallaby Way Sydney<br>
+        <input type = "radio" id = "mc" name = "question10" value = "Mount Maungauni"> Mount Maungauni<br>
         
         <button type="button" id="submitButton" class="btn btn-primary btn-lg btn-block">Submit Answers!</button>   
         
     </form>
  
 </div>
+    
+    <!-- Score  -->
+<div class="container" id="scoreBox">
+    <div class="row">
+    <div class="panel panel-primary" id="score">
+        
+            <div class="panel-heading"><h3 class="panel-title">Your Score</h3></div>
+            <div class="panel-footer">Correct:</div><div id="wins"></div>
+            <div class="panel-footer">Incorrect:</div><div id="loses"></div>
+    </div>
+    </div>
+</div>  
+    
+    
     
     
     
